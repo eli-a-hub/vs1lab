@@ -119,8 +119,8 @@ header {
 
 .header__image {
   padding: 1em;
-  max-width: 6%;
-  width: auto;
+  max-width: 40px !important;
+  min-width: 10% !important;
 }
 
 
@@ -153,16 +153,47 @@ form label{
 
 /* ### TODO ### Styles for Discovery component */
 /* ... your code here ... */
+div.discovery__wrapper{
+  display: flex;
+  padding: 1em;
+}
+
+li{
+  display: flex;
+  background-color: lightgray;
+  color: #00B7FF;
+  height:45px;
+  margin: 0.9em;
+  padding: 0.9em;
+  border-radius: 5px;
+}
+
 .search {
   width: 12.5em;
   text-align: center;
 }
 
 /* ### TODO ### Styles for Footer Component */
-
 /* ... your code here ... */
+footer{
+  display: flex;
+  background-color: lightgray;
+  text-align: center;
+  height: 50px;
+}
 
 
 /* ### TODO ### Media Queries */
-
 /* ... your code here ... */
+@media (max-width: 900px) {
+  div.discovery__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
