@@ -134,9 +134,13 @@ header {
 
 
 /* ### TODO ### Styles for Main Component */
-
 /* ... your code here ... */
-
+main {
+  display: flex;
+}
+section{
+  padding: 1em;
+}
 
 /* ### TODO ### Styles for Tagging component */
 
