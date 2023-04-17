@@ -52,9 +52,18 @@
 
             <!-- ############### VS1Lab 1a Form 2 Start -->
             <form class="discovery__search" id="discoveryFilterForm" action="/discovery" method="post">
-
                 <!-- ... your code here ... -->
-
+                <fieldset style="text-align:left">
+                    <legend>Search</legend>
+                    <input type="text" id="searchBar" placeholder="e.g. Berlin"/>
+                    <input type="submit" id="searchButton" value="Search"/>
+                    <label for="searchBar"></label>
+                    <input type="hidden" id="latitudeIn" placeholder="e.g. #ber" pattern="#[a-zA-Z0-9]+"/>
+                    <label for="addTag"></label>
+                    <input type="hidden" id="longitudeIn" placeholder="e.g. #ber" pattern="#[a-zA-Z0-9]+"/>
+                    <label for="addTag"></label>
+                    <label for="searchButton"></label>
+                </fieldset>
             </form>
             <!-- ############### VS1Lab 1a Form 2 End -->
 
