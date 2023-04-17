@@ -114,23 +114,15 @@ header {
   background-color: lightgray;
   align-items: center;
   text-align: center;
-
+  justify-content: space-between;
 }
 
 .header__image {
   padding: 1em;
-  min-width: 6%;
-  max-width: 7%;
+  max-width: 6%;
+  width: auto;
 }
 
-.header__title {
-  flex: 1; /* additionally, equal width */
-  padding: 1em;
-}
-.header__navigation {
-  flex: 1; /* additionally, equal width */
-  padding: 1em;
-}
 
 
 /* ### TODO ### Styles for Main Component */
@@ -143,14 +135,28 @@ section{
 }
 
 /* ### TODO ### Styles for Tagging component */
-
 /* ... your code here ... */
+form input {
+  margin: 0.7em;
+  display: flex;
+  font-size: 0.8em;
+}
 
+form label{
+  margin: 0.7em;
+}
+
+.addTag {
+  width: 12.5em;
+  text-align: center;
+}
 
 /* ### TODO ### Styles for Discovery component */
-
 /* ... your code here ... */
-
+.search {
+  width: 12.5em;
+  text-align: center;
+}
 
 /* ### TODO ### Styles for Footer Component */
 
